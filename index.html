@@ -12,8 +12,7 @@
 		
 		<!-- Styles -->
 		<!-- Bootstrap CSS -->
-		<link rel="preload" as="script" href="css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- Animate CSS -->
 		<link href="css/animate.min.css" rel="stylesheet">
 		<!-- Basic stylesheet -->
@@ -21,8 +20,12 @@
 		<!-- Font awesome CSS -->
 		<link href="css/font-awesome.min.css" rel="stylesheet">		
 		<!-- Custom CSS -->
-		<link href="css/style.css" rel="stylesheet">
+		<link rel="preload" href="css/style.css" as="style">
+		<noscript>
+			<link href="css/style.css" rel="stylesheet">
+		</noscript>
 		<link href="css/style-color.css" rel="stylesheet">
+
 		
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="img/logo/favicon.ico">
